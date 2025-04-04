@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration & Contacts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        table, th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        form {
+            max-width: 400px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+        }
+        .submit-btn {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Ordered List with Roman Numerals -->
+    <h2>My Ordered List</h2>
+    <ol type="I">
+        <li>Learn HTML</li>
+        <li>Practice CSS</li>
+        <li>Master JavaScript</li>
+        <li>Explore React</li>
+        <li>Build Projects</li>
+    </ol>
+
+    <!-- External Image from Pexels -->
+    <h2>Beautiful Scenery</h2>
+    <img src="https://images.pexels.com/photos/414612/pexels-photo-414612.jpeg" alt="Scenery from Pexels" width="600">
+
+    <!-- Contacts Table -->
+    <h2>Contact List</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Address</th>
+            <th>Mobile</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <td>Robert Mwangi</td>
+            <td>123 Main St, NY</td>
+            <td>+13174567890</td>
+            <td>Robertmwangi@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Inshunti Rudasingwa</td>
+            <td>Kimironko KG114 St, KI</td>
+            <td>+2507654321</td>
+            <td>inshuntirudasingwa@oulook.com</td>
+        </tr>
+        <tr>
+            <td>David Mabena</td>
+            <td>789 Oak St, JH</td>
+            <td>+2722334455</td>
+            <td>davidmabena@gmail.com</td>
+        </tr>
+        <tr>
+            <td>Lisa Tokhwe</td>
+            <td>321 Pine St, PE</td>
+            <td>+2733445566</td>
+            <td>lisatokhwe@outlook</td>
+        </tr>
+        <tr>
+            <td>Michael Johnson</td>
+            <td>654 Maple St, WA</td>
+            <td>+3344556677</td>
+            <td>michael.johnson@yahoo.com</td>
+        </tr>
+    </table>
+
+    <!-- Registration Form -->
+    <h2>Register Here</h2>
+    <form action="#" method="POST">
+        <!-- Name Field -->
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <!-- Email Field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+        <!-- Password Field -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter a strong password" required>
+
+        <!-- Date Field -->
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required>
+
+        <!-- Dropdown (Country Selection) -->
+        <label for="country">Select Country:</label>
+        <select id="country" name="country">
+            <option value="">-- Choose a country --</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+        </select>
+
+        <!-- Radio Buttons (Gender Selection) -->
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <!-- Checkboxes (Interests) -->
+        <label>Interests:</label><br>
+        <input type="checkbox" id="coding" name="interests" value="coding">
+        <label for="coding">Coding</label><br>
+        <input type="checkbox" id="music" name="interests" value="music">
+        <label for="music">Music</label><br>
+        <input type="checkbox" id="sports" name="interests" value="sports">
+        <label for="sports">Sports</label><br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Register</button>
+    </form>
+
+</body>
+</html>
